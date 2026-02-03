@@ -1,9 +1,11 @@
 <script>
     let ola_mundo = "Olá, mundo! 🌍"; // Win + .
+    let producao = "Em produção! 🚀"
 </script>
 
 <main>
     <h1>{ola_mundo}</h1>
+    <p>{producao}</p>
 </main>
 
 <style>
