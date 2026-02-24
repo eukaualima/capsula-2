@@ -10,6 +10,7 @@ export async function load()
     {
         const lista = await dao.buscarTodos();
 
+        // Todo o retorno é incorporado na variável "data" do +page.svelte
         return {
             lista: JSON.parse(JSON.stringify(lista)), // Serializando os dados
             erro: null
