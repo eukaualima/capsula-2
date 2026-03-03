@@ -1,7 +1,7 @@
 import { fail, redirect, error } from '@sveltejs/kit';
-import { AtividadeDAO } from '$lib/server/database/DAO/AtividadeDAO';
-import { ClassificacaoDAO } from '$lib/server/database/DAO/ClassificacaoDAO';
-import { GrupoDAO } from '$lib/server/database/DAO/GrupoDAO';
+import { AtividadeDAO } from '$lib/server/DAO/AtividadeDAO';
+import { ClassificacaoDAO } from '$lib/server/DAO/ClassificacaoDAO';
+import { GrupoDAO } from '$lib/server/DAO/GrupoDAO';
 import { AtividadeModel } from '$lib/model/AtividadeModel';
 
 /** @type {import('./$types').PageServerLoad} */
