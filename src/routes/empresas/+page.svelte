@@ -3,6 +3,25 @@
     import { invalidateAll } from '$app/navigation';
 
     export let data;
+    let form;
+    let modalAberto = false;
+    let idParaExcluir = null;
+
+    function abrirModal(id){
+        idParaExcluir = id;
+        modalAberto = true;
+    }
+
+    function fecharModal(){
+        idParaExcluir = null;
+        modalAberto = false;
+    }
+
+    function capturarESC(event){
+        if (event.key === "Escape" && modalAberto) {
+            fecharModal();
+        }
+    }
     // TODO: Declarar a variável 'form' para receber os retornos de erro da action
     
     // TODO: Criar variáveis de estado para controlar o modal (ex: modalAberto, idParaExcluir)
